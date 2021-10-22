@@ -1,6 +1,6 @@
 # Animations
 
-Here you can find a record of my learning process in `C ++` using [openFrameworks](https://openframeworks.cc/) for creative coding.
+Here you can find a record of my learning process in `C++` using [openFrameworks](https://openframeworks.cc/) for creative coding.
 
 Common setup:
 
