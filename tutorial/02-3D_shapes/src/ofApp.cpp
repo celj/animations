@@ -13,7 +13,7 @@ void ofApp::update()
 //--------------------------------------------------------------
 void ofApp::draw()
 {
-    ofNoFill();
+    ofNoFill(); // empty figures
     ofDrawBox(64, 256, 0, 64, 64, 64);
     ofDrawCone(160, 256, 0, 32, 128);
     ofDrawCylinder(256, 256, 32, 128);

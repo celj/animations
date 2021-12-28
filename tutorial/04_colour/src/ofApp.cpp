@@ -1,8 +1,11 @@
 #include "ofApp.h"
 
+// Colours are drawn with RGB
+// Use single values for grayscale, and forth place for alpha (transparency)
+
 //--------------------------------------------------------------
 void ofApp::setup() {
-
+    ofSetBackgroundColor(100, 160, 200);
 }
 
 //--------------------------------------------------------------
@@ -12,7 +15,8 @@ void ofApp::update() {
 
 //--------------------------------------------------------------
 void ofApp::draw() {
-
+    ofSetColor(130, 255, 130, 60);
+    ofDrawCircle(ofGetWidth() / 2, ofGetHeight() / 2, 256);
 }
 
 //--------------------------------------------------------------

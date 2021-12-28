@@ -13,13 +13,13 @@ void ofApp::update()
 //--------------------------------------------------------------
 void ofApp::draw()
 {
-    ofFill();
+    ofFill(); // filled figures
     ofDrawRectangle(64, 64, 64, 64);
     ofDrawCircle(192, 96, 32);
     ofDrawLine(256, 64, 320, 128);
     ofDrawTriangle(352, 128, 384, 64, 416, 128);
 
-    ofNoFill();
+    ofFill(); // filled figures
     ofDrawEllipse(512, 96, 128, 64);
     ofDrawRectRounded(608, 64, 64, 64, 16);
     ofDrawBezier(704, 64, 736, 128, 768, 160, 800, 64);
