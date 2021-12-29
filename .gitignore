@@ -15,7 +15,13 @@
 *.obj
 *.out
 *.pch
+*.qbs
 *.slo
 *.smod
 *.so
 *.test
+bin
+config.make
+Makefile
+obj
+
