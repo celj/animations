@@ -2,17 +2,20 @@
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-
+	video.load("video.mp4");
+	video.setVolume(0); // mute
+	video.play();
 }
 
 //--------------------------------------------------------------
 void ofApp::update() {
-
+	video.update();
+	video.setSpeed(0.5); // slow down
 }
 
 //--------------------------------------------------------------
 void ofApp::draw() {
-
+	video.draw(ofGetWidth() / 2 - video.getWidth() / 2, ofGetHeight() / 2 - video.getHeight() / 2);
 }
 
 //--------------------------------------------------------------
