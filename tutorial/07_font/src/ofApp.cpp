@@ -2,7 +2,8 @@
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-
+	font.load("segoeui.ttf", 80);
+	phrase = "this is a test";
 }
 
 //--------------------------------------------------------------
@@ -12,7 +13,9 @@ void ofApp::update() {
 
 //--------------------------------------------------------------
 void ofApp::draw() {
-
+	font.drawString(phrase,
+			ofGetWidth() / 2 - font.stringWidth(phrase) / 2,
+			ofGetHeight() / 2 - font.stringHeight(phrase) / 2);
 }
 
 //--------------------------------------------------------------

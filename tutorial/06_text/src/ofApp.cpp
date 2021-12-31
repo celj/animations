@@ -13,7 +13,7 @@ void ofApp::update() {
 //--------------------------------------------------------------
 void ofApp::draw() {
 	//ofSetColor(60);
-	ofDrawBitmapString("Hello World!", 100, 100); // only useful for small notes
+	ofDrawBitmapString("this is a test", 100, 100); // only useful for small notes
 }
 
 //--------------------------------------------------------------
