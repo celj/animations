@@ -2,7 +2,12 @@
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-
+	drumloop.load("drumloop.wav"); // note that WAVs are higher quality than MP3s
+	drumloop.setVolume(1.0);
+	drumloop.play();
+	drumloop.setLoop(true);
+	drumloop.setSpeed(1.5);
+	drumloop.setPan(1.0); // -1.0 is left, 0.0 is center, 1.0 is right
 }
 
 //--------------------------------------------------------------
