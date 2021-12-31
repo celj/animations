@@ -15,7 +15,9 @@ void ofApp::update() {
 
 //--------------------------------------------------------------
 void ofApp::draw() {
-	video.draw(ofGetWidth() / 2 - video.getWidth() / 2, ofGetHeight() / 2 - video.getHeight() / 2);
+	video.draw(ofGetWidth() / 2 - video.getWidth() / 2,
+			ofGetHeight() / 2 - video.getHeight() / 2,
+			300, 300);
 }
 
 //--------------------------------------------------------------
