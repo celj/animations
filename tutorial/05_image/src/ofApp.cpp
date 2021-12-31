@@ -2,7 +2,8 @@
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-
+	emoji.load("test.png");
+	emoji.rotate90(2); // static rotation as factor of 90 degrees
 }
 
 //--------------------------------------------------------------
@@ -12,7 +13,8 @@ void ofApp::update() {
 
 //--------------------------------------------------------------
 void ofApp::draw() {
-
+	emoji.draw(ofGetWidth() / 2 - emoji.getWidth() / 2, ofGetHeight() / 2 - emoji.getHeight() / 2);
+	emoji.resize(200, 200);
 }
 
 //--------------------------------------------------------------
