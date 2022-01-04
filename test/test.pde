@@ -33,7 +33,7 @@ int[][] cellsBuffer;
 boolean pause = false;
 
 void setup() {
-    size (640, 360);
+    size (800, 800);
 
     // Instantiate arrays
     cells = new int[width/cellSize][height/cellSize];
