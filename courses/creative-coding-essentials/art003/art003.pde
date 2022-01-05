@@ -4,12 +4,12 @@ void setup() {
 
 void draw() {
     background(100);
-    
-	fill(0);
-	noStroke();
+
+    fill(0);
+    noStroke();
     ellipse(mouseX, mouseY, 100, 100); // ellipse
 
-	fill(255);
-	ellipse(width / 2, height / 2, 100, 100);
+    fill(255);
+    ellipse(width / 2, height / 2, 100, 100);
 }
 

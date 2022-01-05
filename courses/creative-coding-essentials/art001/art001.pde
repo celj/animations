@@ -6,6 +6,6 @@ void draw() {
     background(mouseX);
     fill(width - mouseX);
     noStroke();
-    ellipse(mouseX, mouseY, 40, 40);
+    ellipse(mouseX, mouseY, 50, 50);
 }
 
