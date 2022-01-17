@@ -1,3 +1,8 @@
+final String sketchname = getClass().getName();
+
+import com.hamoid.*;
+VideoExport videoExport;
+
 void setup() {
     size(900, 900);
 }
@@ -23,5 +28,14 @@ void draw() {
 
 	//saveFrame("out/####.png");
 	rec();
+}
+
+void rec() {
+    if (frameCount == 1) {
+        videoExport = new VideoExport(this, "out/" + sketchname + ".mp4");
+        videoExport.setFrameRate(60);
+        videoExport.startMovie();
+    }
+    videoExport.saveFrame();
 }
 
