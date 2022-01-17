@@ -11,5 +11,8 @@ void draw() {
 
     fill(255);
     ellipse(width / 2, height / 2, 100, 100);
+
+	saveFrame("out/####.png");
+	rec();
 }
 

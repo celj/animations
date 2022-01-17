@@ -16,5 +16,8 @@ void draw() {
     fill(255);
     rect(0, 0, 20, 400);
     pop();
+
+	//saveFrame("out/####.png");
+	rec();
 }
 

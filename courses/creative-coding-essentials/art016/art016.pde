@@ -14,5 +14,8 @@ void draw() {
         ellipse(random(width), random(height), i * 10, i * 10);
 
     }
+
+	saveFrame("out/####.png");
+	rec();
 }
 

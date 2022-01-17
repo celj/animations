@@ -26,5 +26,8 @@ void draw() {
 	rect(a, 3 * a, 2 * a, a, 0, 0, r, 0);
 	rect(a, 5 * a, 3 * a, a, 0, r, 0, 0);
 	rect(a, 7 * a, 3 * a, a, 0, 0, r, r);
+
+	saveFrame("out/####.png");
+	//rec();
 }
 

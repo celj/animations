@@ -17,5 +17,8 @@ void draw() {
         ellipse(0, 0, 20, 20);
         popMatrix();
     }
+
+	//saveFrame("out/####.png");
+	rec();
 }
 

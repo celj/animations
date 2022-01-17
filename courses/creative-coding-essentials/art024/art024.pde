@@ -16,5 +16,8 @@ void draw() {
     rotate(radians(wave * 180));
     rect(0, 0, 50, height * 0.8);
     pop();
+
+	//saveFrame("out/####.png");
+	rec();
 }
 

@@ -14,5 +14,8 @@ void draw() {
         x = map(i, 0, amount, 0, width);
         ellipse(x, y + height / 2, size, size);
     }
+
+	saveFrame("out/####.png");
+	//rec();
 }
 

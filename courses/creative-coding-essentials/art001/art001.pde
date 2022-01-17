@@ -7,5 +7,8 @@ void draw() {
     fill(width - mouseX);
     noStroke();
     ellipse(mouseX, mouseY, 50, 50);
+
+    //saveFrame("out/####.png");
+    rec();
 }
 

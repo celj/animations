@@ -9,5 +9,8 @@ String name = "Carlos";
 void setup(){
     println("Hi, my name is " + name);
     println("I was born in " + year);
+
+	//saveFrame("out/####.png");
+	//rec();
 }
 

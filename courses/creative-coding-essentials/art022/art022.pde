@@ -10,5 +10,8 @@ void draw() {
 	float wave = sin(frameCount * 100000) * 150;
 
     ellipse(width / 2 + wave, height / 2, 500, 500);
+
+	//saveFrame("out/####.png");
+	rec();
 }
 

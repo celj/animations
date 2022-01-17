@@ -25,5 +25,8 @@ void draw() {
     translate(mouseX, mouseY);
     triangle(0, 0, 40, 40, 0, 60);
     pop();
+
+	//saveFrame("out/####.png");
+	rec();
 }
 

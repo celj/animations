@@ -14,5 +14,8 @@ void draw() {
     for (int i = 0; i < 20; i++) {
         ellipse(i * 150, height / 2, 100, 100);
     }
+
+	saveFrame("out/####.png");
+	//rec();
 }
 

@@ -20,5 +20,8 @@ void draw() {
     rotate(radians( - frameCount));
     rect(0, 0, 50, 700);
     popMatrix();
+
+	//saveFrame("out/####.png");
+	rec();
 }
 

@@ -20,5 +20,8 @@ void draw() {
 
     triangle(x1, y1, x2, y2, x3, y3);
     pop();
+
+    saveFrame("out/####.png");
+    //rec();
 }
 

@@ -12,5 +12,8 @@ void draw() {
     background(secondary);
     fill(255);
     noStroke();
+
+	saveFrame("out/####.png");
+	//rec();
 }
 

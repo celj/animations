@@ -12,5 +12,8 @@ void draw() {
     } else {
         rect(width / 2, height / 2, 400, 400);
     }
+
+	saveFrame("out/####.png");
+	rec();
 }
 

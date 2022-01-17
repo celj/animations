@@ -1,6 +1,6 @@
 void setup() {
     size(500, 500);
-    frameRate(4); // 4 frames per second
+    frameRate(1); // 4 frames per second
 }
 
 void draw() {
@@ -13,5 +13,8 @@ void draw() {
     }
 
     ellipse(random(0, width), random(0, height), 200, 200);
+
+	saveFrame("out/####.png");
+	rec();
 }
 

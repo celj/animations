@@ -26,5 +26,8 @@ void draw() {
         }
         pop();
     }
+
+	saveFrame("out/####.png");
+	//rec();
 }
 

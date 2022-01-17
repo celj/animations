@@ -18,5 +18,8 @@ void draw() {
     }
 
     ellipse(width / 2, height / 2, frameCount * 8, frameCount * 8);
+
+	//saveFrame("out/####.png");
+	rec();
 }
 
