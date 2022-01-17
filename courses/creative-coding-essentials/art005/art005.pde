@@ -24,8 +24,8 @@ void draw() {
     rectMode(CENTER);
     rect((width / 2) + (2 * weight), height / 2, weight, 200);
 
-	saveFrame("out/####.png");
-	//rec();
+    saveFrame("out/####.png");
+    //rec();
 }
 
 void rec() {

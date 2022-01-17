@@ -26,8 +26,8 @@ void draw() {
     vertex(a, 2 * a);
     endShape();
 
-	saveFrame("out/####.png");
-	//rec();
+    saveFrame("out/####.png");
+    //rec();
 }
 
 void rec() {

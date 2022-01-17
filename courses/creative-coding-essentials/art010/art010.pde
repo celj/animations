@@ -18,8 +18,8 @@ void draw() {
     fill(255);
     noStroke();
 
-	saveFrame("out/####.png");
-	//rec();
+    saveFrame("out/####.png");
+    //rec();
 }
 
 void rec() {

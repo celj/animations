@@ -12,12 +12,12 @@ void draw() {
     fill(255);
     noStroke();
 
-	float wave = sin(frameCount * 100000) * 150;
+    float wave = sin(frameCount * 100000) * 150;
 
     ellipse(width / 2 + wave, height / 2, 500, 500);
 
-	//saveFrame("out/####.png");
-	rec();
+    //saveFrame("out/####.png");
+    rec();
 }
 
 void rec() {

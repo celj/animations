@@ -11,12 +11,12 @@ color red = #ff0000;
 int year = 2000;
 String name = "Carlos";
 
-void setup(){
+void setup() {
     println("Hi, my name is " + name);
     println("I was born in " + year);
 
-	//saveFrame("out/####.png");
-	//rec();
+    //saveFrame("out/####.png");
+    //rec();
 }
 
 void rec() {

@@ -19,8 +19,8 @@ void draw() {
     fill(#111111);
     rect(width / 2, height / 2, 300, 300, 30);
 
-	saveFrame("out/####.png");
-	//rec();
+    saveFrame("out/####.png");
+    //rec();
 }
 
 void rec() {

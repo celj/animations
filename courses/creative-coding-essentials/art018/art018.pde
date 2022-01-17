@@ -20,8 +20,8 @@ void draw() {
         ellipse(i * 150, height / 2, 100, 100);
     }
 
-	saveFrame("out/####.png");
-	//rec();
+    saveFrame("out/####.png");
+    //rec();
 }
 
 void rec() {

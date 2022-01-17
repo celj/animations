@@ -22,8 +22,8 @@ void draw() {
     rect(0, 0, 20, 400);
     pop();
 
-	//saveFrame("out/####.png");
-	rec();
+    //saveFrame("out/####.png");
+    rec();
 }
 
 void rec() {

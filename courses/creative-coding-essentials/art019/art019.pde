@@ -22,8 +22,8 @@ void draw() {
         ellipse(mouseX, mouseY, i * 70, i * 70);
     }
 
-	//saveFrame("out/####.png");
-	rec();
+    //saveFrame("out/####.png");
+    rec();
 }
 
 void rec() {

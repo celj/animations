@@ -14,14 +14,14 @@ void draw() {
     noStroke();
 
     for (int i = 0; i < 10; i++) {
-		//println(i);
+        //println(i);
         fill(random(255));
         ellipse(random(width), random(height), i * 10, i * 10);
 
     }
 
-	saveFrame("out/####.png");
-	rec();
+    saveFrame("out/####.png");
+    rec();
 }
 
 void rec() {

@@ -16,8 +16,8 @@ void draw() {
 
     ellipse(width / 2, height / 2, circleSize, circleSize);
 
-	//saveFrame("out/####.png");
-	rec();
+    //saveFrame("out/####.png");
+    rec();
 }
 
 void rec() {

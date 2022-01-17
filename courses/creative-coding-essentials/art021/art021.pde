@@ -31,8 +31,8 @@ void draw() {
     triangle(0, 0, 40, 40, 0, 60);
     pop();
 
-	//saveFrame("out/####.png");
-	rec();
+    //saveFrame("out/####.png");
+    rec();
 }
 
 void rec() {

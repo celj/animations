@@ -18,8 +18,8 @@ void draw() {
         rect(width / 2, height / 2, 400, 400);
     }
 
-	saveFrame("out/####.png");
-	rec();
+    saveFrame("out/####.png");
+    rec();
 }
 
 void rec() {

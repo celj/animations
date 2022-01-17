@@ -28,8 +28,8 @@ void draw() {
     translate(mouseX, mouseY);
     triangle(0, 0, 40, 40, 0, 60);
 
-	//saveFrame("out/####.png");
-	rec();
+    //saveFrame("out/####.png");
+    rec();
 }
 
 void rec() {

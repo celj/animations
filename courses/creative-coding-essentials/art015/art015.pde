@@ -26,8 +26,8 @@ void draw() {
     rect(0, 0, 50, 700);
     popMatrix();
 
-	//saveFrame("out/####.png");
-	rec();
+    //saveFrame("out/####.png");
+    rec();
 }
 
 void rec() {
