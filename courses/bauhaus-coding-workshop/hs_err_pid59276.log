@@ -1,0 +1,102 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f03b7617f21, pid=59276, tid=59309
+#
+# JRE version: OpenJDK Runtime Environment Temurin-11.0.12+7 (11.0.12+7) (build 11.0.12+7)
+# Java VM: OpenJDK 64-Bit Server VM Temurin-11.0.12+7 (11.0.12+7, mixed mode, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x3f21]  ImageStrings::find(Endian*, char const*, int*, unsigned int)+0x71
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport %p %s %c %d %P %E" (or dumping to /home/carlos/Documents/animations/courses/bauhaus-coding-workshop/core.59276)
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/adoptium/adoptium-support/issues
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,address=8890,server=y,suspend=y,quiet=y -Djna.nosys=true -Djava.library.path=:/home/carlos/processing-4.0b2/core/library:/home/carlos/sketchbook/libraries/VideoExport/library:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib -ea processing.core.PApplet --display=1 --sketch-path=/home/carlos/Documents/animations/courses/bauhaus-coding-workshop/art033 art033
+
+Host: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz, 8 cores, 7G, Ubuntu 21.10
+Time: Wed Jan 19 22:50:55 2022 -05 elapsed time: 1088.918700 seconds (0d 0h 18m 8s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f03b0640800):  JavaThread "Animation Thread" [_thread_in_vm, id=59309, stack(0x00007f0345efd000,0x00007f0345ffd000)]
+
+Stack: [0x00007f0345efd000,0x00007f0345ffd000],  sp=0x00007f0345ff9e80,  free space=1011k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libjimage.so+0x3f21]  ImageStrings::find(Endian*, char const*, int*, unsigned int)+0x71
+C  [libjimage.so+0x4b1a]  ImageFileReader::find_location_index(char const*, unsigned long long*) const+0x3a
+C  [libjimage.so+0x501a]  JIMAGE_FindResource+0xfa
+V  [libjvm.so+0x60e22e]  ClassPathImageEntry::open_stream(char const*, Thread*)+0x4e
+V  [libjvm.so+0x610faf]  ClassLoader::load_class(Symbol*, bool, Thread*)+0x12f
+V  [libjvm.so+0xea2fe5]  SystemDictionary::load_instance_class(Symbol*, Handle, Thread*)+0x4f5
+V  [libjvm.so+0xea152a]  SystemDictionary::resolve_instance_class_or_null(Symbol*, Handle, Handle, Thread*)+0x93a
+V  [libjvm.so+0xea1952]  SystemDictionary::resolve_or_fail(Symbol*, Handle, Handle, bool, Thread*)+0x22
+V  [libjvm.so+0x6c683d]  ConstantPool::klass_at_impl(constantPoolHandle const&, int, bool, Thread*)+0xbd
+V  [libjvm.so+0x8c649c]  InterpreterRuntime::_new(JavaThread*, ConstantPool*, int)+0x6c
+j  java.lang.Throwable.printStackTrace(Ljava/io/PrintStream;)V+1 java.base@11.0.12
+j  java.lang.Throwable.printStackTrace()V+4 java.base@11.0.12
+j  processing.core.PApplet.lambda$runSketch$3(Ljava/lang/Thread;Ljava/lang/Throwable;)V+1
+j  processing.core.PApplet$$Lambda$3.uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V+2
+j  java.lang.ThreadGroup.uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V+30 java.base@11.0.12
+j  java.lang.ThreadGroup.uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V+13 java.base@11.0.12
+j  java.lang.Thread.dispatchUncaughtException(Ljava/lang/Throwable;)V+6 java.base@11.0.12
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0x8d61b9]  JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, Thread*)+0x3b9
+V  [libjvm.so+0x8d43ad]  JavaCalls::call_virtual(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, Thread*)+0x1fd
+V  [libjvm.so+0xedb140]  JavaThread::exit(bool, JavaThread::ExitType)+0x180
+V  [libjvm.so+0xedbb1c]  JavaThread::thread_main_inner()+0x10c
+V  [libjvm.so+0xed863f]  Thread::call_run()+0x14f
+V  [libjvm.so+0xc773fe]  thread_native_entry(Thread*)+0xee
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  java.lang.Throwable.printStackTrace(Ljava/io/PrintStream;)V+1 java.base@11.0.12
+j  java.lang.Throwable.printStackTrace()V+4 java.base@11.0.12
+j  processing.core.PApplet.lambda$runSketch$3(Ljava/lang/Thread;Ljava/lang/Throwable;)V+1
+j  processing.core.PApplet$$Lambda$3.uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V+2
+j  java.lang.ThreadGroup.uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V+30 java.base@11.0.12
+j  java.lang.ThreadGroup.uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V+13 java.base@11.0.12
+j  java.lang.Thread.dispatchUncaughtException(Ljava/lang/Throwable;)V+6 java.base@11.0.12
+v  ~StubRoutines::call_stub
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x00007f03a787151c
+
+Register to memory mapping:
+
+RAX=0x0000000000004540 is an unknown value
+RBX=0x00007f0345ff9f31 is pointing into the stack for thread: 0x00007f03b0640800
+RCX=0x00007f03a786001c is an unknown value
+RDX=0x0000000000004540 is an unknown value
+RSP=0x00007f0345ff9e80 is pointing into the stack for thread: 0x00007f03b0640800
+RBP=0x00007f0345ff9ea0 is pointing into the stack for thread: 0x00007f03b0640800
+RSI=0x00007f0345ff9f30 is pointing into the stack for thread: 0x00007f03b0640800
+RDI=0x00007f03b7830058: <offset 0x000000000021c058> in /home/carlos/processing-4.0b2/java/lib/libjimage.so at 0x00007f03b7614000
+R8 =0x0 is NULL
+R9 =
+[error occurred during error reporting (printing register info), id 0xb, SIGSEGV (0xb) at pc=0x00007f03b85ffd60]
+
+Registers:
+RAX=0x0000000000004540, RBX=0x00007f0345ff9f31, RCX=0x00007f03a786001c, RDX=0x0000000000004540
+RSP=0x00007f0345ff9e80, RBP=0x00007f0345ff9ea0, RSI=0x00007f0345ff9f30, RDI=0x00007f03b7830058
+R8 =0x0000000000000000, R9 =0x00000000fa4dc72a, R10=0x00007f0345ff9f5f, R11=0x00000000ffffffff
+R12=0x00007f0345ff9f30, R13=0x000000000000844b, R14=0x00007f0345ffafd8, R15=0x00007f0364573c50
+RIP=0x00007f03b7617f21, EFLAGS=0x0000000000010246, CSGSFS=0x002b000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f0345ff9e80)
+0x00007f0345ff9e80:   00007f0345ffb618 00007f03b0035150
+0x00007f0345ff9e90:   0000000000000000 00007f0345ff9f30
+0x00007f0345ff9ea0:   00007f0345ff9f10 00007f03b7618b1a
+0x00007f0345ff9eb0:   00007f0345ffb170 00007f03b83c9635 
+
+Instructions: (pc=0x00007f03b7617f21)
+0x00007f03b7617e21:   c5 4c 01 e3 48 89 ce e8 b3 f2 ff ff e9 79 fd ff
+0x00007f03b7617e31:   ff 89 d1 0f b7 74 08 fe 66 41 89 74 0e fe e9 7e
+0x00007f03b7617e41:   fe ff ff 0f 1f 40 00 8b 08 49 8d 1c 16 41 89 0e
+0x00007f03b7617e51:   89 d1 8b 74 08 fc 41 89 74 0e fc 48 8d 34 10 48
+0x00007f03b7617e61:   89 75 b8 e9 13 fe ff ff 0f 1f 80 00 00 00 00 0f
+0x00007f03b7617e71:   b6 17 55 89 f0 48 89 e5 84 d2 74 22 48 8d 4f 01
+0x00007f03b7617e81:   0f 1f 80 00 00 00 00 48 83 
