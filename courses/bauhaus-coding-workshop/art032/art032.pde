@@ -38,12 +38,13 @@ void draw() {
     endShape();
 
     //saveFrame("out/####.png");
-	rec();
+    rec();
 }
 
 void rec() {
     if (frameCount == 1) {
         videoExport = new VideoExport(this, "out/"+sketchname+".mp4");
+        videoExport.setFfmpegPath("/opt/homebrew/bin/ffmpeg");
         videoExport.setFrameRate(8);
         videoExport.startMovie();
     }
